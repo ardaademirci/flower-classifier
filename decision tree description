@@ -1,0 +1,19 @@
+We can see the visual representation of the decision tree classifier we trained on the iris dataset.
+This visualization helps us understand the process the model uses to classify new data points.
+The decision tree typically represented as a flow chart-like structure, starting from as single root node at the top and branching out to subsequent nodes as the decision-making process progresses.
+
+Key elements of the decision tree are nodes, edges and labels.
+Decision Tree is composed of nodes. Each node represents a specific condition or decision rule based on a feature of the data. The condition is displayed within the nodes box. 
+There are two main types of nodes: 
+Internal Nodes: Represents decision points. They typically contain a condition based on a feature. For example: Petal length <= 2.45. 
+If the condition is true, decision tree follows the left branch, otherwise, it followes the right branch.
+Leaf Nodes: Represents the final decisions or classifications. They indicate the predicted class or category for a given data point based on the decision made at the internal nodes. 
+
+Edges connect the nodes, representing the possible paths a data point can take through the tree based on the decisions made at the each node. Each node has labels that provide information about the decision or classfication made at that node. These labels typically include:
+Gini Index: Measures the impurity or disorder at a node. A lower gini value indicates a pure node, where most data points belong to the same class.
+Samples: Is the number of data points that reach that node.
+Value: represents the distribution of class labels among the data point at that node.
+Class: Is the predicted class or category for data points that reach that node. The background color of a node indicates the class distribution of the data points that reach that node. For example: A node with a green-ish color might indicate that most data points reachnig that node belong to the 'versicolor' class. 
+
+To understand how the decision tree makes predictions, follow the paths from the root node to the leaf nodes. each path represents a set of conditions that a data point must satisfy to be classified into a particular category.
+To predict the species of a new Iris flower, you would provide the measurements of its sepal length, sepal width, petal length, petal width to the decision tree. The tree would then follow its decision rules and classify the flower based on the values of these features. 
